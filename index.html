@@ -6,6 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Faker/3.1.0/faker.min.js"></script>
 </head>
 <body>
     <div id="app" class="container">
@@ -32,9 +33,9 @@
             data:{
                 startFlg:"",
                 current_question:"ffafa",
+                faker:faker.lorem.sentence,
                 questions:[
-                    'apple',
-                    'banana',
+                    this.faker,
                     'chocolate',
                     'donut',
                     'espresso',
